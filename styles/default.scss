@@ -1,0 +1,15 @@
+// Main Color - Blue: #007BFF
+// Complementary Color - Light Gray: #F1F1F1
+// Accent Color - Orange: #FF8800
+
+$main-color : #007BFF;
+$comp-color : #F1F1F1;
+$accent-color : #FF8800;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: "Poppins";
+}

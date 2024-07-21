@@ -1,0 +1,116 @@
+@import './default.scss';
+
+.products {
+
+    .product {
+        margin: 15% 10%;
+        padding: 5%;
+        // width: 400px;
+        // height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1rem;
+        // background-color: $comp-color;
+        // border: 1px solid $main-color;
+        border-radius: 2px;
+        transition: all 0.3s ease 0s;
+        
+        &:hover {
+            box-shadow: 2px 2px 8px 5px $comp-color;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 3px;
+        }
+        
+        button {
+            border: none;
+            border-radius: 3px;
+            background-color: #007BFF ; // $main-color = #007BFF
+            color: white;
+            padding: 1rem;
+            transition: all 0.3s ease 0s;
+
+            &:hover {
+                color: black;
+                background-color: #a7d1ff;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .products {
+        padding: 10% 10% ;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+        
+        .product {
+            margin: 0.9%;
+            padding: 0.9%;
+            width: 22%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .products {
+        padding: 5% 5% ;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+        
+        .product {
+            margin: 1%;
+            padding: 1%;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+
+        }
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .products {
+        padding: 5% 5% ;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+        
+        .product {
+            margin: 1%;
+            padding: 1%;
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+
+        }
+    }
+}

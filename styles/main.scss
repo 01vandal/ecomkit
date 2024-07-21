@@ -1,0 +1,77 @@
+@import "./default.scss";
+
+
+.highlights {
+    color: $accent-color;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: $comp-color;
+    box-shadow: 0px 2px 10px $accent-color;
+
+    .logo {
+        width: 30%;
+
+    }
+
+    .navbar .menu i {
+        font-size: 2rem;
+        color: black;
+        &:hover {
+            color: $main-color;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    nav {
+        padding: 1rem 4rem;
+        justify-content: space-around;
+
+        .logo {
+            width: 10%;
+        }
+        .navbar {
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                
+                li {
+                    padding: 0rem 1rem;
+                    
+                    .diff {
+                        background-color: #FF8800;
+                        transition: all 0.3s ease 0s;
+
+                        &:hover {
+                            background-color: #ffa43b;
+                            color: black;
+                        }
+                    }
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        padding: 0.5rem;
+                        border-radius: 5px;
+                        transition: all 0.3s ease 0s;
+
+                        &:hover {
+                            color: $accent-color;
+                        }
+                    }
+                }
+            }
+        }
+        .navbar .menu {
+            display: none;
+        }
+    }
+
+
+
+
+}
